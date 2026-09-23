@@ -34,7 +34,7 @@ Forge requires Python `>= 3.11` and Git.
 
 ```bash
 # Clone and install locally
-git clone https://github.com/your-username/forge.git ~/forge
+git clone https://github.com/Sumeet-basfore/forge.git ~/forge
 cd ~/forge
 pip install -e .
 ```
