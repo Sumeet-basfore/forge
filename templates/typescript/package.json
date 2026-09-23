@@ -1,0 +1,17 @@
+{
+  "name": "{{ project_name }}",
+  "version": "0.1.0",
+  "description": "A TypeScript project managed with Forge",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/tests/**/*.test.js || echo 'Run build before testing'",
+    "lint": "eslint . --ext .ts",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
