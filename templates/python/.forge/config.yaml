@@ -1,0 +1,9 @@
+name: "{{ project_name }}"
+language: "python"
+template: "python"
+
+toolchain:
+  build: "python -m py_compile src/main.py"
+  test: "pytest"
+  lint: "ruff check ."
+  format: "ruff format --check ."

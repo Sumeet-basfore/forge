@@ -1,0 +1,9 @@
+name: "{{ project_name }}"
+language: "android"
+template: "android"
+
+toolchain:
+  build: "./gradlew assembleDebug"
+  test: "./gradlew test"
+  lint: "./gradlew lint"
+  format: "./gradlew spotlessCheck"
