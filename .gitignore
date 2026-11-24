@@ -42,4 +42,21 @@ htmlcov/
 
 # Forge local project metadata (when testing in root)
 .forge/
+# Template metadata is part of the template, so a fresh clone can scaffold.
+!templates/*/.forge/
+
 .forge.db
+.forge.db-shm
+.forge.db-wal
+.forge_history
+.forge/activity.log
+.forge/activity.log.lock
+.forge/tasks/
+.forge/reports/
+.forge/context.md
+.forge/worktrees/
+.worker.log
+.worker.stderr.log
+.credentials.json
+.credentials.*
+cache/

@@ -9,7 +9,7 @@ changing the tool.
 Every change runs the suite before it lands.
 
 ```factory
-test: .venv/bin/python -m pytest -q
+test: uv run --extra dev python -m pytest -q
 ```
 
 `bin/verify .` from `/home/sumeet/personal-repo` runs it and writes a receipt. Name the
