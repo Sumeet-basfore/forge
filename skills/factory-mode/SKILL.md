@@ -33,8 +33,14 @@ Each route ends the same way, and that is the point of having routes at all. The
 done when the worker reports. It is done when the verification commands pass and the pull
 request is merged with the `factory` check green.
 
-Read the procedure for each step before writing the task document. They live beside this file
-at `../<name>/SKILL.md`, for example `../planning/SKILL.md`. Do not restate them here.
+Read the procedure for each step before writing the task document. Forge lives at
+`/home/sumeet/personal-repo/projects/forge`, and procedures are at
+`<forge>/skills/<name>/SKILL.md`, for example `<forge>/skills/planning/SKILL.md`. Do not restate
+them here.
+
+`worker.md` in this folder is the operator contract for a dispatched worker. Mate's
+`contract.py` generates its own prompt today and does not read that file, so paste its rules into
+a task's brief until it does.
 
 ## Procedure
 
@@ -47,7 +53,7 @@ at `../<name>/SKILL.md`, for example `../planning/SKILL.md`. Do not restate them
    git switch -c factory/<slug>
    ```
 
-3. Create the task documents in `.forge/tasks/<ID>.md` per `../orchestration/SKILL.md`. SHIP
+3. Create the task documents in `.forge/tasks/<ID>.md` per `<forge>/skills/orchestration/SKILL.md`. SHIP
    tasks need `allowed_paths` kept as narrow as the work allows, and `verification` copied from
    the `factory` block.
 4. Dispatch and drain.
